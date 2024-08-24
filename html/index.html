@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Giriş Yap</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <script defer src="js/loginpage.js"></script>
+    <script src="https://kit.fontawesome.com/e4a4dd1e39.js" crossorigin="anonymous"></script>
+    <link rel="icon" type="image/x-icon" href="images/logo2.png">
+</head>
+
+<body onload="javascript:window.history.forward(1);">
+    <section>
+        <div class="container">
+            <div class="user signinBx">
+                <div class="imgBx"><img src="images/img1.jpg"></div>
+                <div class="formBx">
+                    <form id="girisYap">
+                        <h2>Oturum Aç</h2>
+                        <input type="text" name="kullaniciAdi" id="kullanici" placeholder="Kullanıcı Adı">
+                        <input type="password" name="sifre" id="girisSifre" placeholder="Şifre">
+                        <input type="submit" value="Giriş Yap" id="girisButonu">
+                        <p class="signup ">Hesabınız yok mu? <a href="#" id="gecis" onclick="toggleForm();">Hesap
+                                Oluştur.</a></p>
+                    </form>
+                </div>
+            </div>
+            <div class="user signupBx">
+
+                <div class="formBx">
+                    <form id="kayitOl">
+                        <h2>Hesap Oluştur</h2>
+                        <input type="text" name="kullaniciAdi"  placeholder="Kullanıcı Adı" required>
+                        <input type="password" name="sifre" placeholder="Şifre" id="sifreid">
+                        <input type="password" name="sifreTekrar" placeholder="Şifre Tekrar" id="sifretekrarid">
+                        <input type="submit" value="Kayıt Ol" id="kayitButonu">
+                        <p class="signup ">Zaten hesabınız var mı? <a href="#" id="gecis2"
+                                onclick="toggleForm();">Oturum Aç.</a></p>
+                    </form>
+                </div>
+                <div class="imgBx"><img src="images/img2.jpg"></div>
+            </div>
+        </div>
+    </section>
+
+</body>
+
+</html>

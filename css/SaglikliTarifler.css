@@ -1,0 +1,601 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap');
+
+* {
+    margin: 0px;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+
+}
+
+body {
+    overflow-x: hidden;
+
+}
+
+.ustbilgi {
+
+    width: 100%;
+    height: 12%;
+    padding-top: 0.15%;
+    margin: 0px;
+    top: 0;
+    left: 0;
+    background-image: linear-gradient(to top, #414142, black);
+}
+
+.sosyalMedya img {
+
+    position: absolute;
+    left: 10%;
+    padding-top: 0.15%;
+
+    text-align: left;
+    width: 8%;
+
+}
+
+.sosyalMedya {
+    text-align: right;
+}
+
+.sosyalMedya ul {
+    list-style: none;
+}
+
+.sosyalMedya li {
+    display: inline-block;
+
+
+
+}
+
+.sosyalMedya li a {
+    text-decoration: none;
+}
+
+.sosyalMedya li i {
+    font-size: 20px;
+    display: block;
+    padding: 10px 20px;
+    color: #fff;
+}
+
+.sosyalMedya li i:hover {
+
+    border-radius: 5px;
+    background: #e9c02a;
+    background-image: linear-gradient(to top, #e9c02a, #414142);
+}
+
+
+
+.menuBar {
+    border-top: 3px solid #e9c02a;
+    background-image: linear-gradient(to top, black, #414142);
+    text-align: center;
+    width: 100%;
+}
+
+.menuBar ul {
+    list-style: none;
+}
+
+.menuBar li {
+    display: inline-block;
+}
+.menuBar li a {
+    
+    display: block;
+    padding: 10px 25px;
+    color: #fff;
+    text-decoration: none;
+}
+.arrow {
+    border: solid rgb(255, 255, 255);
+    
+    border-width: 0 2px 2px 0;
+    display: inline-block;
+    padding: 4px;
+    margin: 2px;
+  }
+.down {
+    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+  }
+  .right {
+    transform: rotate(-45deg);
+    -webkit-transform: rotate(-45deg);
+  }
+.menuBar li a:hover {
+    border-radius: 5px;
+    background: #e9c02a;
+    background-image: linear-gradient(to top, #e9c02a, #414142);
+}
+
+.menuBar li ul  {
+    border-radius: 0 5px 5px 5px;
+    text-align: left;
+    display: none;
+    position: absolute;
+    background: #414142;
+    background-image: linear-gradient(to top, black, #414142);
+    z-index: 5;
+}
+
+.menuBar li:hover ul {
+    display: block;
+}
+
+.menuBar li ul li {
+    display: block;
+    position: relative;
+}
+
+.menuBar li ul li .acilirMenu{
+    display: none;
+    left:100%;
+    position:absolute;
+    top:0;
+    width: 140%;
+    
+}
+.menuBar li ul li:hover ul{
+    display: block;
+}
+
+
+.genelYapi {
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+.ustKisim {
+    width: 100%;
+    height: auto;
+}
+
+.ortaKisim {
+    width: 100%;
+    height: auto;
+}
+
+.altresim {
+    width: 250px;
+}
+
+.baslik {
+    position: relative;
+    height: 200px;
+}
+
+.baslik .container {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    text-align: center;
+    background: rgba(0, 0, 0, 0.5);
+}
+
+.satir {
+    width: 100%;
+    height: auto;
+    margin-top: 70px;
+
+}
+
+#baslikFoto {
+    width: 100%;
+    height: 100%;
+}
+
+.satir h1 {
+    font-family: 'Open Sans', sans-serif;
+    color: white;
+    font-size: 30px;
+    font-weight: 800;
+}
+
+.satir ul li {
+    list-style: none;
+    display: inline-block;
+    margin: 5px;
+    font-family: 'Open Sans', sans-serif;
+    color: white;
+    font-size: 14px;
+}
+
+
+
+.baslik a {
+    text-decoration: none;
+    color: white;
+}
+
+
+
+.baslık a:hover {
+    color: #e9c02a;
+    transition: 0.3s;
+}
+.orta
+{
+    margin-left: 300px;
+    margin-right: 300px;
+}
+
+
+
+.genelYapi {
+    height: 100%;
+    width: 100%;
+}
+
+.baslik {
+    position: relative;
+    height: 200px;
+}
+
+.baslik .container {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    text-align: center;
+    background: rgba(0, 0, 0, 0.5);
+}
+
+.satir {
+    width: 100%;
+    height: auto;
+    margin-top: 70px;
+
+}
+
+#baslikFoto {
+    width: 100%;
+    height: 100%;
+}
+
+h1 {
+    font-family: 'Open Sans', sans-serif;
+    color: white;
+    font-size: 30px;
+    font-weight: 800;
+}
+
+.satir ul li {
+    list-style: none;
+    display: inline-block;
+    margin: 5px;
+    font-family: 'Open Sans', sans-serif;
+    color: white;
+    font-size: 14px;
+}
+
+.hareketler {
+    width: auto;
+    height: auto;
+    margin: auto;
+    padding-top: 40px;
+    padding-left: 115px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.kutular {
+    width: 400px;
+    height: 300px;
+    color: white;
+    text-align: center;
+    margin: 15px;
+    position: relative;
+    box-shadow: 0 3px 10px #ccc;
+}
+
+
+.kutular a {
+    text-decoration: none;
+    color: white;
+}
+
+#fitness {
+    color: #e9c02a !important;
+}
+
+.kutular a:hover {
+    color: #e9c02a;
+    transition: 0.3s;
+}
+
+.fotolar {
+    width: 100%;
+    height: 220px;
+    position: relative;
+}
+
+.fotolar img {
+    width: 100%;
+    height: 100%;
+}
+
+.isimler {
+    margin-top: 30px;
+    margin-left: 20px;
+    font-size: 20px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 700;
+    position: absolute;
+}
+
+.isimler a {
+    color: black;
+}
+
+.isimler a:hover {
+    color: #e9c02a;
+    transition: 0.3s;
+}
+
+@media screen and (min-width:1311px) and (max-width:1420px) {
+    .hareketler {
+        width: auto;
+        padding-left: 6%;
+    }
+
+    .kutular {
+        max-width: 375px;
+    }
+}
+
+@media screen and (min-width:1230px) and (max-width:1311px) {
+    .hareketler {
+        width: auto;
+        padding-left: 6%;
+    }
+
+    .kutular {
+        max-width: 350px;
+    }
+}
+
+@media screen and (min-width:1130px) and (max-width:1229px) {
+    .hareketler {
+        width: auto;
+        padding-left: 2%;
+    }
+
+    .kutular {
+        max-width: 325px;
+    }
+}
+
+@media screen and (max-width:992px) and (min-width:630px) {
+    .hareketler {
+        width: auto;
+        padding-left: 30%;
+    }
+
+    .kutular {
+        max-width: 400px;
+        max-height: 300px;
+
+    }
+}
+@media screen and (max-width:630px) and (min-width:500px) {
+    .hareketler{
+        width: auto;
+        padding-left:15% ;
+    }
+    
+}
+@media screen and (max-width:500px){
+    .hareketler{
+        width: auto;
+        padding-left: 6%;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+footer {
+    position: static;
+    bottom: 0;
+}
+
+@media (max-height:800px) {
+    footer {
+        position: static;
+    }
+
+    header {
+        padding-top: 40px;
+    }
+}
+
+.altBilgi {
+    background-image: linear-gradient(to top, black, #414142);
+    background-color: #2d2a30;
+    box-sizing: border-box;
+    width: 100%;
+    text-align: left;
+    font: bold 16px sans-serif;
+    padding: 50px 50px 60px 50px;
+    margin-top: 80px;
+}
+
+.altBilgi .solBolge,
+.altBilgi .ortaBolge,
+.altBilgi .sagBolge {
+    display: inline-block;
+    vertical-align: top;
+}
+
+/* Footer Sol */
+
+.altBilgi .solBolge {
+    width: 32%;
+    text-align: center;
+
+}
+
+.altBilgi .solBolge img {
+    width: 28%;
+    
+
+
+}
+
+.altBilgi .miniBar {
+    color: #ffffff;
+    margin: 20px 0 12px;
+}
+
+.altBilgi .miniBar a {
+    display: inline-block;
+    line-height: 1.8;
+    text-decoration: none;
+    color: inherit;
+}
+
+.enAlt {
+    text-align: center;
+    left: 40%;
+    bottom: -200;
+    color: #8f9296;
+    font-size: 14px;
+    font-weight: normal;
+
+}
+
+/* Footer Orta */
+
+.altBilgi .ortaBolge {
+    width: 35%;
+    padding-top: 15px;
+}
+
+.altBilgi .ortaBolge i {
+    background-color: #414142;
+    color: #e9c02a;
+    font-size: 25px;
+    width: 38px;
+    height: 38px;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 42px;
+    margin: 10px 15px;
+    vertical-align: middle;
+}
+
+.altBilgi .ortaBolge i.fa-envelope {
+    font-size: 20px;
+    line-height: 38px;
+}
+
+.altBilgi .ortaBolge i.fa-house-chimney {
+    font-size: 20px;
+    line-height: 38px;
+}
+
+.altBilgi .ortaBolge i.fa-phone {
+    font-size: 20px;
+    line-height: 38px;
+}
+
+.altBilgi .ortaBolge p {
+    display: inline-block;
+    color: #ffffff;
+    vertical-align: middle;
+    margin: 0;
+}
+
+.altBilgi .ortaBolge p span {
+    display: block;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 2;
+}
+
+.altBilgi .ortaBolge p a {
+    color: #ffffff;
+    text-decoration: none;
+    ;
+}
+
+/* Footer SaÄŸ */
+
+.altBilgi .sagBolge {
+    width: 25%;
+}
+
+.altBilgi .altIcon {
+    padding-left: 75px;
+    padding-bottom: 25px;
+    margin-top: 25px;
+}
+
+.altBilgi .altIcon .icon {
+    display: inline-block;
+    width: 35px;
+    height: 35px;
+    cursor: pointer;
+    background-color: #33383b;
+    border-radius: 3px;
+    font-size: 20px;
+    color: #ffffff;
+    text-align: center;
+    line-height: 35px;
+    margin-right: 3px;
+    margin-bottom: 20px;
+}
+
+.altBilgi .altIcon .yazi {
+    text-decoration: none;
+    font-size: 15px;
+    color: #ffffff;
+}
+
+.altBilgi .altIcon .icon.facebook:hover {
+    background-color: #3b5998;
+}
+
+.altBilgi .altIcon .icon.instagram:hover {
+
+    background: linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
+
+}
+
+.altBilgi .altIcon .icon.twitter:hover {
+    background-color: #00acee;
+}
+
+.miniBar a:hover {
+    color: #e9c02a;
+}
+
+@media (max-width: 880px) {
+
+    .altBilgi .solBolge,
+    .altBilgi .ortaBolge,
+    .altBilgi .sagBolge {
+        display: block;
+        width: 100%;
+        margin-bottom: 40px;
+        text-align: center;
+    }
+
+    .altBilgi .ortaBolge i {
+        margin-left: 0;
+    }
+}

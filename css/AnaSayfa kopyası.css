@@ -1,0 +1,525 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap');
+
+* {
+    margin: 0px;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+
+}
+
+body {
+    overflow-x: hidden;
+
+}
+
+.ustbilgi {
+
+    width: 100%;
+    height: 12%;
+    padding-top: 0.15%;
+    margin: 0px;
+    top: 0;
+    left: 0;
+    background-image: linear-gradient(to top, #414142, black);
+}
+
+.sosyalMedya img {
+
+    position: absolute;
+    left: 10%;
+    padding-top: 0.15%;
+
+    text-align: left;
+    width: 8%;
+
+}
+
+.sosyalMedya {
+    text-align: right;
+}
+
+.sosyalMedya ul {
+    list-style: none;
+}
+
+.sosyalMedya li {
+    display: inline-block;
+
+
+
+}
+
+.sosyalMedya li a {
+    text-decoration: none;
+}
+
+.sosyalMedya li i {
+    font-size: 20px;
+    display: block;
+    padding: 10px 20px;
+    color: #fff;
+}
+
+.sosyalMedya li i:hover {
+
+    border-radius: 5px;
+    background: #e9c02a;
+    background-image: linear-gradient(to top, #e9c02a, #414142);
+}
+
+
+
+.menuBar {
+    border-top: 3px solid #e9c02a;
+    background-image: linear-gradient(to top, black, #414142);
+    text-align: center;
+    width: 100%;
+}
+
+.menuBar ul {
+    list-style: none;
+}
+
+.menuBar li {
+    display: inline-block;
+}
+.menuBar li a {
+    
+    display: block;
+    padding: 10px 25px;
+    color: #fff;
+    text-decoration: none;
+}
+.arrow {
+    border: solid rgb(255, 255, 255);
+    
+    border-width: 0 2px 2px 0;
+    display: inline-block;
+    padding: 4px;
+    margin: 2px;
+  }
+.down {
+    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+  }
+  .right {
+    transform: rotate(-45deg);
+    -webkit-transform: rotate(-45deg);
+  }
+.menuBar li a:hover {
+    border-radius: 5px;
+    background: #e9c02a;
+    background-image: linear-gradient(to top, #e9c02a, #414142);
+}
+
+.menuBar li ul  {
+    border-radius: 0 5px 5px 5px;
+    text-align: left;
+    display: none;
+    position: absolute;
+    background: #414142;
+    background-image: linear-gradient(to top, black, #414142);
+}
+
+.menuBar li:hover ul {
+    display: block;
+}
+
+.menuBar li ul li {
+    display: block;
+    position: relative;
+}
+
+.menuBar li ul li .acilirMenu{
+    display: none;
+    left:100%;
+    position:absolute;
+    top:0;
+    width: 140%;
+    
+}
+.menuBar li ul li:hover ul{
+    display: block;
+}
+
+
+
+        
+.section {
+    margin: 0;
+    padding: 0;
+    height: 60vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #e9c02a;
+    
+}
+
+.slider {
+
+    width: 70%;
+    height: 90%;
+    border-radius: 10px;
+    overflow: hidden;
+
+}
+
+.slide {
+    width: 600%;
+    height: 85.33%;
+    display: flex;
+}
+
+.slide input {
+    display: none;
+
+
+}
+
+.resim {
+
+    width: 20%;
+    transition: 2s;
+}
+
+.resim img {
+    width: 100%;
+    height: 150%;
+}
+
+.nav-m {
+    position: absolute;
+    width: 70%;
+    margin-top: 2%;
+    justify-content: center;
+    display: flex;
+}
+
+.m-btn {
+    border: 2px solid #e9c02a;
+    padding: 5px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 1s;
+}
+
+.m-btn:not(:last-child) {
+    margin-right: 4%;
+}
+
+.m-btn:hover {
+    background-color: #e9c02a;
+}
+
+#radio1:checked~.bir {
+    margin-left: 0;
+}
+
+#radio2:checked~.bir {
+    margin-left: -20%;
+}
+
+#radio3:checked~.bir {
+    margin-left: -40%;
+}
+
+#radio4:checked~.bir {
+    margin-left: -60%;
+}
+
+
+/* PRODUCTS */
+.product {
+
+    position: relative;
+    overflow: hidden;
+    padding: 20px;
+}
+
+.product-category {
+    padding: 0 10vw;
+    font-size: 30px;
+    font-weight: 500;
+    margin-bottom: 40px;
+    text-transform: capitalize;
+    text-align: center;
+}
+
+.product-container {
+    padding: 15px 10vw;
+    display: flex;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+}
+
+.product-container::-webkit-scrollbar {
+    display: none;
+}
+
+.product-card {
+    flex: 0 0 auto;
+    width: 400px;
+    height: 420px;
+    margin-right: 40px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.product-image {
+    position: relative;
+    width: 100%;
+    height: 320px;
+    overflow: hidden;
+}
+
+.product-thumb {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.product-info {
+    width: 100%;
+    height: 100px;
+    padding-top: 10px;
+}
+
+.product-info a{
+    text-decoration: none;
+}
+
+.product-brand {
+    color: black;
+    padding-top: 5%;
+    padding-left: 3%;
+    text-align: left;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+.pre-btn,
+.nxt-btn {
+    border: none;
+    width: 10vw;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(90deg, rgba(255, 255, 255, 0) 0%, #fff 100%);
+    cursor: pointer;
+    z-index: 8;
+}
+
+.pre-btn {
+    left: 0;
+    transform: rotate(180deg);
+}
+
+.nxt-btn {
+    right: 0;
+}
+
+.pre-btn img,
+.nxt-btn img {
+    opacity: 0.2;
+}
+
+.pre-btn:hover img,
+.nxt-btn:hover img {
+    opacity: 1;
+}
+
+footer {
+    position: static;
+    bottom: 0;
+}
+
+@media (max-height:800px) {
+    footer {
+        position: static;
+    }
+
+    header {
+        padding-top: 40px;
+    }
+}
+
+.altBilgi {
+    background-image: linear-gradient(to top, black, #414142);
+    background-color: #2d2a30;
+    box-sizing: border-box;
+    width: 100%;
+    text-align: left;
+    font: bold 16px sans-serif;
+    padding: 50px 50px 60px 50px;
+    margin-top: 80px;
+}
+
+.altBilgi .solBolge,
+.altBilgi .ortaBolge,
+.altBilgi .sagBolge {
+    display: inline-block;
+    vertical-align: top;
+}
+
+/* Footer Sol */
+
+.altBilgi .solBolge {
+    width: 32%;
+    text-align: center;
+
+}
+
+.altBilgi .solBolge img {
+    width: 28%;
+    
+
+
+}
+
+.altBilgi .miniBar {
+    color: #ffffff;
+    margin: 20px 0 12px;
+}
+
+.altBilgi .miniBar a {
+    display: inline-block;
+    line-height: 1.8;
+    text-decoration: none;
+    color: inherit;
+}
+
+.enAlt {
+    text-align: center;
+    left: 40%;
+    bottom: -200;
+    color: #8f9296;
+    font-size: 14px;
+    font-weight: normal;
+
+}
+
+/* Footer Orta */
+
+.altBilgi .ortaBolge {
+    width: 35%;
+    padding-top: 15px;
+}
+
+.altBilgi .ortaBolge i {
+    background-color: #414142;
+    color: #e9c02a;
+    font-size: 25px;
+    width: 38px;
+    height: 38px;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 42px;
+    margin: 10px 15px;
+    vertical-align: middle;
+}
+
+.altBilgi .ortaBolge i.fa-envelope {
+    font-size: 20px;
+    line-height: 38px;
+}
+
+.altBilgi .ortaBolge i.fa-house-chimney {
+    font-size: 20px;
+    line-height: 38px;
+}
+
+.altBilgi .ortaBolge i.fa-phone {
+    font-size: 20px;
+    line-height: 38px;
+}
+
+.altBilgi .ortaBolge p {
+    display: inline-block;
+    color: #ffffff;
+    vertical-align: middle;
+    margin: 0;
+}
+
+.altBilgi .ortaBolge p span {
+    display: block;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 2;
+}
+
+.altBilgi .ortaBolge p a {
+    color: #ffffff;
+    text-decoration: none;
+    ;
+}
+
+/* Footer Sağ */
+
+.altBilgi .sagBolge {
+    width: 25%;
+}
+
+.altBilgi .altIcon {
+    padding-left: 75px;
+    padding-bottom: 25px;
+    margin-top: 25px;
+}
+
+.altBilgi .altIcon .icon {
+    display: inline-block;
+    width: 35px;
+    height: 35px;
+    cursor: pointer;
+    background-color: #33383b;
+    border-radius: 3px;
+    font-size: 20px;
+    color: #ffffff;
+    text-align: center;
+    line-height: 35px;
+    margin-right: 3px;
+    margin-bottom: 20px;
+}
+
+.altBilgi .altIcon .yazi {
+    text-decoration: none;
+    font-size: 15px;
+    color: #ffffff;
+}
+
+.altBilgi .altIcon .icon.facebook:hover {
+    background-color: #3b5998;
+}
+
+.altBilgi .altIcon .icon.instagram:hover {
+
+    background: linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
+
+}
+
+.altBilgi .altIcon .icon.twitter:hover {
+    background-color: #00acee;
+}
+
+.miniBar a:hover {
+    color: #e9c02a;
+}
+
+@media (max-width: 880px) {
+
+    .altBilgi .solBolge,
+    .altBilgi .ortaBolge,
+    .altBilgi .sagBolge {
+        display: block;
+        width: 100%;
+        margin-bottom: 40px;
+        text-align: center;
+    }
+
+    .altBilgi .ortaBolge i {
+        margin-left: 0;
+    }
+}
